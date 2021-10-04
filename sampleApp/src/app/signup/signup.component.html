@@ -1,4 +1,4 @@
-<p>signup works!</p>
+<p></p>
 <div class="container">
     <div class="row">
         <div class="col-md-6">
@@ -8,28 +8,29 @@
                     <h6>Please register for new account.</h6>
                 
                 <form>
+                    <form [formGroup]="signupForm" (ngSubmit)="signUp()"></form>
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp">
+                        <input formControlName="fullname" type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp">
                         <div id="nameHelp" class="form-text">As per your identification document.</div>
                      </div>
                      <div class="mb-3">
-                        <label for="exampleInputName" class="form-label">Mobile Number</label>
-                        <input type="number" class="form-control" id="exampleInputMobileNumber" aria-describedby="mobileNumberHelp">
+                        <label for="exampleInputmobile" class="form-label">Mobile Number</label>
+                        <input formControlName="mobile" type="number" class="form-control" id="exampleInputMobileNumber" aria-describedby="mobileNumberHelp">
                         <div id="nameHelp" class="form-text">only number sample (0123456789)</div>
                      </div>                                            
                      <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <label for="exampleInputEmail" class="form-label">Email address</label>
+                        <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                      </div>
                      <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
                      </div>                                                                   
                      <button type="submit" class="btn btn-primary">Sign up</button>
                 </form>
-                <a style="color:red; margin-top:10px; margin-bottom:10px; color:white; ">Already registered? Click to login</a>   
+                <a routerLink="/login" style="color:red; margin-top:10px; margin-bottom:10px; color:white; ">Already registered? Click to login</a>   
             </div>
             </div>
         </div>

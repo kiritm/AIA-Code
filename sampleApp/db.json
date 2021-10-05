@@ -1,31 +1,58 @@
 {
-    "employee":[
+  "employee": [
     {
-        "id":"1",
-        "firstName":"emp1FName",
-        "email":"emp1@gmail.com",
-        "mobile":"012345678",
-        "salary":"200"
+      "id": "1",
+      "firstName": "emp1FName",
+      "email": "emp1@gmail.com",
+      "mobile": "012345678",
+      "salary": "200"
     },
     {
-        "id":"2",
-        "firstName":"emp2FName",
-        "email":"emp2@yahoo.com",
-        "mobile":"016345678",
-        "salary":"500"
+      "id": "2",
+      "firstName": "emp2FName",
+      "email": "emp2@yahoo.com",
+      "mobile": "016345678",
+      "salary": "500"
     },
     {
-        "id":"3",
-        "firstName":"emp3FName",
-        "email":"emp2@ymail.com",
-        "mobile":"019345678",
-        "salary":"900"
+      "id": "3",
+      "firstName": "emp3FName",
+      "email": "emp2@ymail.com",
+      "mobile": "019345678",
+      "salary": "900"
     }
-],
-
-"signupUsers":[ 
-],
-    "profile":{
-        "name":"typecode"
+  ],
+  "signupUsers": [
+    {
+      "fullname": "test",
+      "mobile": 23212,
+      "email": "ewqw@gmail.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "fullname": "User2",
+      "mobile": 23343243,
+      "email": "er@gmail.com",
+      "password": "12345",
+      "id": 2
     }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
